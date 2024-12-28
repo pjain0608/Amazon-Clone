@@ -1,0 +1,60 @@
+{% load static %}
+<header>
+    <div class="navbar-content">
+        <div class="nav-logo border">
+            <a href="{% url 'amazon' %}">
+                <div class="logo"></div>
+            </a>
+        </div>
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-sec">India</p>
+            </div>
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input type="text" placeholder="Search Amazon" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="nav-signin border">
+            <p><span>Hello, sign in</span></p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+        <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">& Orders</p>
+        </div>
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <a href="{% url 'fresh' %}" class="border">Fresh</a>
+            <a href="{% url 'mx_player' %}" class="border">MX Player</a>
+            <a href="{% url 'sell' %}" class="border">Sell</a>
+            <a href="{% url 'best_seller' %}" class="border">Best Sellers</a>
+            <a href="{% url 'today_deal' %}" class="border">Today's Deals</a>
+            <a href="{% url 'home_kitchen' %}" class="border">Home & Kitchen</a>
+            <a href="{% url 'customer_service' %}" class="border">Customer Service</a>
+            <a href="{% url 'prime' %}" class="border">Prime</a>
+            <a href="{% url 'pay' %}" class="border">Amazon Pay</a>
+        </div>
+        <div class="panel-deals">
+            <img src="{% static 'amazon_images/index_page/image_1.jpg' %}" alt="slider_image">
+        </div>
+    </div>
+    
+</header>
